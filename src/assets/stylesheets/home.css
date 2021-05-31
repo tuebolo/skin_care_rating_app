@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Trirong:wght@100;300&display=swap");
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Trirong', 'Limelight', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -8,7 +10,7 @@
 }
 
 #inspire {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Limelight', sans-serif;
 }
 
 .container.fill-height {
@@ -19,10 +21,12 @@ a.side_bar_link{
   text-decoration: none;
 }
 
-.v-card__title--primary, .v-card__text {
+.card__title--primary, .card__text {
   text-align: left;
+  word-break: normal;
 }
 
-.v-card {
+.card {
   height: 100% !important;
 }
+

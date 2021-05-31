@@ -1,21 +1,3 @@
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: gray;
-  width: 100%;
-}
-
-#inspire {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-}
-
-a.side_bar_link{
-  text-decoration: none;
-}
-</style>
 <template>
   <v-app id="inspire">
     <v-navigation-drawer
@@ -42,12 +24,12 @@ a.side_bar_link{
       </router-link>
     </v-list>
     </v-navigation-drawer>
-    <v-app-bar color="indigo" dark fixed app>
+    <v-app-bar :src="require('./assets/images/background/b10.jpg')" app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Home</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn text v-bind:to="{ name: 'AddProduct'}">Add Product</v-btn>
+        <v-btn text v-bind:to="{ name: 'AddSunscreen'}">Add Sunscreen</v-btn>
       </v-toolbar-items>
     </v-app-bar>
     <v-main>
@@ -57,14 +39,14 @@ a.side_bar_link{
         </div>
       </v-container>
     </v-main>
-    <v-footer color="indigo" app>
+    <v-footer color="#CD5C5C" app>
       <span class="white--text">&copy; 2021</span>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-// import './assets/stylesheets/main.css'
+import './assets/stylesheets/main.css'
 
 export default {
   data: () => ({
