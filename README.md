@@ -1,6 +1,4 @@
-# movie_rating_app
-
-> y
+# skin care rating app
 
 ## Build Setup
 
